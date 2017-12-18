@@ -31,6 +31,7 @@ export const ROUTES: Routes = [
 		HttpClientModule,
 		RouterModule.forChild(ROUTES),
 	],
+	declarations: [...fromContainers.containers],
 	exports: [...fromContainers.containers],
 })
 export class WordsModule {}
